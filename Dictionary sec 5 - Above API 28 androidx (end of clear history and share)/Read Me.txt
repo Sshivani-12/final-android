@@ -1,0 +1,5 @@
+Changes Made to the Project:
+
+Line 190 to 200 of MainActivity.java:
+A handler is added before calling : suggestionAdapter.changeCursor(cursorSuggestion);
+To have some buffer time. Sometime Fethching the data may take some time and give null pointer exception.
